@@ -1,0 +1,68 @@
+[
+
+  {
+    "key": "openMoneyTransferButon",
+    "value": "//div[contains(text(), 'Open Money Transfer')]",
+    "type": "xpath"
+  },
+  {
+    "key": "logoutButon",
+    "value": "//div[contains(text(), 'Logout')]",
+    "type": "xpath"
+  },{
+  "key": "transferMoneyButon",
+  "value": "//div[contains(text(), 'Transfer money')]",
+  "type": "xpath"
+},{
+  "key": "addMoneyButon",
+  "value": "//div[contains(text(), 'Add money')]",
+  "type": "xpath"
+},{
+  "key": "editAccountButon",
+  "value": "//div[contains(text(), 'Edit account')]",
+  "type": "xpath"
+},
+  {
+    "key": "myAccountAmount",
+    "value": "//div[@class='css-175oi2r']/div[@class='css-175oi2r']/div",
+    "type": "xpath"
+  },
+  {
+    "key": "transferMoneyPopupSenderAccount",
+    "value": "//div[contains(text(), 'Sender account')]",
+    "type": "xpath"
+  },{
+  "key": "transferMoneyPopupReceiverAccount",
+  "value": "//div[contains(text(), 'Receiver account')]",
+  "type": "xpath"
+},{
+  "key": "transferMoneyPopupAmountInput",
+  "value": "//input[contains(@class, 'css-11aywtz')]",
+  "type": "xpath"
+},{
+  "key": "transferMoneyPopupSendButon",
+  "value": "//div[text()='Send']/..",
+  "type": "xpath"
+},{
+  "key": "transactionsLastAction",
+  "value": "//div[@class='css-175oi2r r-1777fci r-13qz1uu r-14lw9ot r-z2wwpe r-1m04atk'][1]/div/div/div[4]/div[2]/div",
+  "type": "xpath"
+},
+  {
+    "key": "transactionsLastActionReceiverText",
+    "value": "//div[@class='css-175oi2r r-1777fci r-13qz1uu r-14lw9ot r-z2wwpe r-1m04atk'][1]/div/div/div[2]/div[2]",
+    "type": "xpath"
+  },{
+  "key": "transferMoneyPopupReceiverAccountDropdowm",
+  "value": "(//div[@class='css-175oi2r r-1777fci']//select)[2]",
+  "type": "xpath"
+},
+  {
+    "key": "myAccountAccountNameText",
+    "value": "//div[text()='Account name']/following-sibling::div",
+    "type": "xpath"
+  }
+
+
+
+]

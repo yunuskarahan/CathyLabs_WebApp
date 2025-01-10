@@ -1,0 +1,22 @@
+Created by yunus.karahan on 10.01.2025
+
+This is a concept file with following syntax for each concept.
+# CatchyLabs uygulamasına gidilir.
+*Go to "https://catchylabs-webclient.testinium.com/" address
+
+#Kullanıcı Adı alanına  <username> ve Sifre alanına <password> girilir.
+*"username" li elementi bul, temizle ve <username> değerini yaz
+*"password" li elementi bul, temizle ve <password> değerini yaz
+
+#Login Butona Tıklanır.
+*Elementi bekle ve sonra tıkla "loginButon"
+
+#Login Ekranında Username or Password Invalid! Uyarası Gorunuyor mu Kontrol Et
+*"loginErrorMessage" elementi "Username or Password Invalid!" değerini içeriyor mu kontrol et
+
+#Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
+*CatchyLabs uygulamasına gidilir.
+*Kullanıcı Adı alanına  "ykaraha1" ve Sifre alanına "Merve.12345" girilir.
+*Login Butona Tıklanır.
+*My Account Sayfasında Open Money Transfer Butonu GOrunuyor mu Kontrol et
+*My Account Sayfasında Open Money Transfer Butonuna Tıklanır.

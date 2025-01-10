@@ -1,0 +1,13 @@
+[
+  {
+    "key": "editAccountAccountNameInput",
+    "value": "//div[@class='css-175oi2r r-13qz1uu']/input",
+    "type": "xpath"
+  },{
+  "key": "editAccountPopupUpdateButon",
+  "value": "//div[text()='UPDATE']",
+  "type": "xpath"
+}
+
+
+]

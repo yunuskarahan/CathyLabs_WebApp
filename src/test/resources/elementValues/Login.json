@@ -1,0 +1,26 @@
+[
+  {
+    "key": "username",
+    "value": "//input[@placeholder='Username']",
+    "type": "xpath"
+  },
+  {
+    "key": "password",
+    "value": "//input[@placeholder='Password']",
+    "type": "xpath"
+  },
+  {
+    "key": "loginButon",
+    "value": "//div[contains(text(), 'Login')]",
+    "type": "xpath"
+  },
+  {
+    "key": "loginErrorMessage",
+    "value": "//div[contains(text(), 'Username or Password Invalid!')]",
+    "type": "xpath"
+  }
+
+
+
+
+]

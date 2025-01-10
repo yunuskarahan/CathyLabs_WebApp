@@ -1,0 +1,52 @@
+[
+  {
+    "key": "addMoneyPopupCardNumberInput",
+    "value": "//div[text()='Card number']/following-sibling::input",
+    "type": "xpath"
+  },{
+  "key": "addMoneyPopupCardHolderInput",
+  "value": "//div[text()='Card holder']/following-sibling::input",
+  "type": "xpath"
+},{
+  "key": "addMoneyPopupExpiryDate",
+  "value": "//div[text()='Expiry date']/following-sibling::input",
+  "type": "xpath"
+},{
+  "key": "addMoneyPopupCvvInput",
+  "value": "//div[text()='CVV']/following-sibling::input",
+  "type": "xpath"
+},{
+  "key": "addMoneyPopupAmountInput",
+  "value": "//div[text()='Amount']/following-sibling::input",
+  "type": "xpath"
+},{
+  "key": "transferMoneyPopupAddButon",
+  "value": "//div[text()='Add']/..",
+  "type": "xpath"
+},
+  {
+    "key": "addMoneyPopupCardNumberInputRequiredText",
+    "value": "//div[text()='Card number']/following-sibling::div",
+    "type": "xpath"
+  },{
+  "key": "addMoneyPopupCardHolderInputRequiredText",
+  "value": "//div[text()='Card holder']/following-sibling::div",
+  "type": "xpath"
+},{
+  "key": "addMoneyPopupExpiryDateRequiredText",
+  "value": "//div[text()='Expiry date']/following-sibling::div",
+  "type": "xpath"
+},{
+  "key": "addMoneyPopupCvvInputRequiredText",
+  "value": "//div[text()='CVV']/following-sibling::div",
+  "type": "xpath"
+},{
+  "key": "addMoneyPopupAmountInputRequiredText",
+  "value": "(//div[text()='Amount']/following-sibling::div)[2]",
+  "type": "xpath"
+},{
+  "key": "addMoneyWarningPopupCloseButon",
+  "value": "//div[text()='\uE633']",
+  "type": "xpath"
+}
+]

@@ -1,0 +1,127 @@
+Created by yunus.karahan on 10.01.2025
+
+This is a concept file with following syntax for each concept.
+# My Account Sayfasında Open Money Transfer Butonu GOrunuyor mu Kontrol et
+*Element var mı kontrol et "openMoneyTransferButon"
+
+#My Account Sayfasında Open Money Transfer Butonuna Tıklanır.
+*Elementi bekle ve sonra tıkla "openMoneyTransferButon"
+
+
+#My Account Sayfasında Trasnfer Money ,Add Money ve Edit Account Butonlari Gorunur mu Kontrol Et
+*Element var mı kontrol et "transferMoneyButon"
+*Element var mı kontrol et "addMoneyButon"
+*Element var mı kontrol et "editAccountButon"
+
+#Trasnfer Money Butonuna Tıkla
+*Elementi bekle ve sonra tıkla "transferMoneyButon"
+
+#Transfer Money Popup'inda Sender Account, Receiver Account ,Amount ve Send Butonu Var mi Kontrol Et
+*Element var mı kontrol et "transferMoneyPopupSenderAccount"
+*Element var mı kontrol et "transferMoneyPopupReceiverAccount"
+*Element var mı kontrol et "transferMoneyPopupAmountInput"
+*Element var mı kontrol et "transferMoneyPopupSendButon"
+
+#Transfer Money Popup'inda Send Buton Aktif Degil mi Kontol Et
+*"transferMoneyPopupSendButon" elementinin "aria-disabled" niteliği "true" değerini içeriyor mu
+
+#My Account Ekranında Amount Tutarı İlk Hesap Tutarı Olarak Hafızaya Kaydedilir.
+*"myAccountAmount" elementinin text bilgisini al ve "firstAmount" ile kaydet
+
+#My Account Ekranında Amount Tutarı Son Hesap Tutarı Olarak Hafızaya Kaydedilir.
+*"myAccountAmount" elementinin text bilgisini al ve "secondAmount" ile kaydet
+
+#Para Transferi Sonrası Hesap Bakiyesi Transfer Tutarı <transferTutarı> Kadar Eksilmelidir.
+*"firstAmount" değerinden "secondAmount" değerini çıkardığında <transferTutarı> sonucunu vermeli
+
+#Para Yukleme İslemi Sonrası Hesap Bakiyesi Yukleme Tutarı <transferTutarı> Kadar Artmalıdır.
+*"secondAmount" değerinden "firstAmount" değerini çıkardığında <transferTutarı> sonucunu vermeli
+
+#Transfer Amount Alanına <tutar> girilir.
+*"transferMoneyPopupAmountInput" li elementi bul, temizle ve <tutar> değerini yaz
+
+#Transfer Money Popup'ında Send Butonuna Tıklanır.
+*Elementi bekle ve sonra tıkla "transferMoneyPopupSendButon"
+*"2" saniye bekle
+
+#Transfer Money Popup'ında Receiver'da Testinium-3 Secilir.
+*"transferMoneyPopupReceiverAccountDropdowm" olarak comboboxtan yazılı "Testinium-3" seçimini yap
+
+#Transaction Alanında Son Isleme Ait Bilgilerde Transfer Edilen Tutar <transferTutarı> oldugu Gorulmelidir.
+*"transactionsLastAction" elementi  beklenen  <transferTutarı> değerini içeriyor mu kontrol et
+
+
+#Transaction Alanında Son Isleme Ait Bilgilerde Transfer Yapılacak Receeiver Adı <ReceiverName> oldugu Gorulmelidir.
+*"transactionsLastActionReceiverText" elementi <ReceiverName> değerini içermiyor mu kontrol et
+
+#Add Money Butonuna Tıklanır.
+*Elementi bekle ve sonra tıkla "addMoneyButon"
+
+#Add Money Popup'ında Card Number,Card Holder,Expriy Date ,Cvv,Amount Inputlari ve Add Buton Gorulmedilir.
+*Element var mı kontrol et "addMoneyPopupCardNumberInput"
+*Element var mı kontrol et "addMoneyPopupCardHolderInput"
+*Element var mı kontrol et "addMoneyPopupExpiryDate"
+*Element var mı kontrol et "addMoneyPopupCvvInput"
+*Element var mı kontrol et "addMoneyPopupAmountInput"
+*Element var mı kontrol et "transferMoneyPopupAddButon"
+
+#Add Money Popup'ında Add Butonuna Tiklanir.
+*Elementi bekle ve sonra tıkla "transferMoneyPopupAddButon"
+*"2" saniye bekle
+
+#Add Money Popup'ında Card Number,Card Holder,Expriy Date ,Cvv,Amount Inputlarin Zorunlu Alan Oldugu Gorulmelidir.
+*"addMoneyPopupCardNumberInputRequiredText" elementi  beklenen  "Required" değerini içeriyor mu kontrol et
+*"addMoneyPopupCardHolderInputRequiredText" elementi  beklenen  "Required" değerini içeriyor mu kontrol et
+*"addMoneyPopupExpiryDateRequiredText" elementi  beklenen  "Required" değerini içeriyor mu kontrol et
+*"addMoneyPopupCvvInputRequiredText" elementi  beklenen  "Required" değerini içeriyor mu kontrol et
+*"addMoneyPopupAmountInputRequiredText" elementi  beklenen  "Required" değerini içeriyor mu kontrol et
+
+#Add Money Popup'ında Card Number Alanina <cardNumber> Girilir.
+*"addMoneyPopupCardNumberInput" li elementi bul, temizle ve <cardNumber> değerini yaz
+
+#Add Money Popup'ında Expriy Date Alanina <expriyDate> Girilir.
+*"addMoneyPopupExpiryDate" li elementi bul, temizle ve <expriyDate> değerini yaz
+
+#Add Money Popup'ında Cvv Date Alanina <cvv> Girilir.
+*"addMoneyPopupCvvInput" li elementi bul, temizle ve <cvv> değerini yaz
+
+#Add Money Popup'ında Amount  Alanina <amount> Girilir.
+*"addMoneyPopupAmountInput" li elementi bul, temizle ve <amount> değerini yaz
+
+#Add Money Popun'da Card Holder '<cardHolder>' , Expriy Date '<expriyDate>' , Cvv '<cvv>' ve Amount '<amount>' Degerleri Girilir
+*Elemente TAB keyi ve <cardHolder>,<expriyDate>,<cvv>,<amount> yolla "addMoneyPopupCardNumberInput"
+*Elementi bekle ve sonra tıkla "addMoneyWarningPopupCloseButon"
+*"2" saniye bekle
+
+#Add Money Popup'ında Expriy Date Inputunun Altında Uyarı Mesajı Gorulmelidir.
+*"addMoneyPopupExpiryDateRequiredText" elementi  beklenen  "Wrong date. Please give a correct date" değerini içeriyor mu kontrol et
+
+#Add Money Popup'ında Amount Inputunun Altında Uyarı Mesajı Gorulmelidir.
+*"addMoneyPopupAmountInputRequiredText" elementi  beklenen  "amount must be a `number` type, but the final value was: `NaN` (cast from the value `\"abcda\"`)." değerini içeriyor mu kontrol et
+
+
+#Add Money Popup'ında Cvv Alanina 3 Karakterden Fazla Girildiginde Uyarı Mesajı Gorulmelidir.
+*Alert Var mı Kontrol Et
+
+#Edit Account  Butonuna Tiklanir.
+*Elementi bekle ve sonra tıkla "editAccountButon"
+*"2" saniye bekle
+
+#Edit Account Popup'ında Account Name İnputu ve Update Buton Gorulmedilir.
+*Element var mı kontrol et "editAccountAccountNameInput"
+*Element var mı kontrol et "editAccountPopupUpdateButon"
+
+#Edit Account Popup'ında Update  Butonuna Tiklanir.
+*Elementi bekle ve sonra tıkla "editAccountPopupUpdateButon"
+*"2" saniye bekle
+
+
+#Edit Account Popup'ında Account Name İnputuna <accountName> girilir.
+*"editAccountAccountNameInput" li elementi bul, temizle ve <accountName> değerini yaz
+
+
+#Edit Account Popup'ında Account Name İnputunda Guncel Olan  <accountName> Yazili mi Kontol Et.
+*"editAccountAccountNameInput" elementinin "value" niteliği <accountName> değerini içeriyor mu
+
+#My Account Ekraninda Account Name <accountName>'mi Kontrol Et.
+*"myAccountAccountNameText" elementi  beklenen  <accountName> değerini içeriyor mu kontrol et
