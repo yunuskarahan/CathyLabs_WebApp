@@ -1,33 +1,87 @@
-## About this template
+# CathyLabs Web Test Otomasyon Framework
 
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
+Bu proje, Selenium WebDriver ve Gauge framework kullanılarak geliştirilmiş bir web test otomasyon çerçevesidir. BDD (Davranış Odaklı Geliştirme) prensiplerine uygun şekilde tasarlanmıştır ve web uygulamalarını etkili bir şekilde test etmek için ölçeklenebilir bir yapı sunmaktadır.
 
-## Installing this template
+## Proje Özellikleri
 
-    gauge --install java_maven_selenium
+- **Selenium WebDriver**: Tarayıcı otomasyonu için kullanılmıştır.
+- **Gauge Framework**: BDD senaryolarını tanımlamak ve çalıştırmak için kullanılmıştır.
+- **Platformlar Arası Test Desteği**: Chrome, Firefox gibi farklı tarayıcılarda test yapabilme.
+- **Sayfa Nesne Modeli (POM)**: Kodun sürdürülebilirliğini ve yeniden kullanılabilirliğini artırmak için uygulanmıştır.
+- **Raporlama**: Test sonuçlarını ayrıntılı bir şekilde görüntülemek için raporlama araçları entegre edilmiştir.
 
-## Building on top of this template
+---
 
-### Defining Specifications
+## Gereksinimler
 
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
+Projenin çalıştırılabilmesi için aşağıdaki araçların sisteminizde yüklü olması gerekmektedir:
 
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
+1. **Java** (JDK 8 veya üstü)
+2. **Maven** (Yapı otomasyonu ve bağımlılık yönetimi için)
+3. **Gauge** (Test framework)
+    - Gerekli Gauge eklentilerini yüklemek için:
+      ```bash
+      gauge install java
+      gauge install html-report
+      ```
 
-### Writing the implementations
+4. **WebDriver** (ChromeDriver, GeckoDriver vb.)
 
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
+---
 
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
+## Kurulum ve Çalıştırma
 
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
+1. **Projeyi Klonlayın**:
+   ```bash
+   git clone https://github.com/yunuskarahan/CathyLabs_WebApp.git
+   cd CathyLabs_WebApp
+   ```
 
-### Execution
+2. **Bağımlılıkları Yükleyin**:
+   ```bash
+   mvn clean install
+   ```
 
-* You can execute the specification as:
+3. **Testleri Çalıştırın**:
+    - Varsayılan ortamda tüm testleri çalıştırmak için:
+      ```bash
+      mvn test
+      ```
+    - Belirli bir tag'e sahip senaryoları çalıştırmak için:
+      ```bash
+      mvn test -DspecsDir=specs -Dtags=@SenaryoTag
+      ```
 
-```
-mvn test
-```
+4. **Raporlara Erişim**:
+    - Test çalıştırıldıktan sonra HTML raporları şu dizinde bulunur:
+      ```
+      reports/html-report/index.html
+      ```
+
+---
+
+## Proje Yapısı
+
+- **`src/test/java`**: Test sınıfları ve adım implementasyonları.
+- **`specs`**: Gauge senaryo dosyaları.
+- **`env`**: Ortam dosyaları (test, staging vb.).
+- **`pom.xml`**: Maven yapılandırma ve bağımlılık dosyası.
+- **`reports`**: Test raporlarının oluşturulduğu dizin.
+
+---
+
+## Ek Özellikler
+
+- **Senaryo Etiketleme**: Test senaryolarını `@Tag` kullanarak kategorize etme.
+- **Çoklu Tarayıcı Desteği**: Farklı tarayıcılarda test çalıştırma yeteneği.
+- **Raporlama**: Test yürütme sonuçlarını detaylı bir şekilde incelemek için HTML raporlama.
+
+---
+
+## Sorun Giderme
+
+- **`NullPointerException` Hatası**: Projenin gerekli bağımlılıklarının yüklü olduğundan ve doğru Gauge eklentilerinin kurulu olduğundan emin olun.
+- **Tarayıcı Başlatılamıyor**: İlgili WebDriver sürümünüzün, kullandığınız tarayıcı ile uyumlu olduğundan emin olun.
+- **Test Çalıştırılamıyor**: `mvn clean install` komutuyla bağımlılıkları güncelleyip tekrar deneyin.
+
+---
