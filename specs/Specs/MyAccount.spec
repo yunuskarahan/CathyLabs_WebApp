@@ -1,17 +1,17 @@
 My Account Ekrani Senaryolari
 =====================
-tags:regresyon
+tags:regresyon,myaccount
 
      
 My Account ekraninda Transfer Money,Add Money ve Edit Account Butonlari Gorunur mu Kontrol Et
 ----------------
-tags:myaccountPage
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *My Account Sayfasında Trasnfer Money ,Add Money ve Edit Account Butonlari Gorunur mu Kontrol Et
 
 My Account  Transfer Money Popup Kontrolu
 ----------------
-tags:myaccountPage
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Trasnfer Money Butonuna Tıkla
 *Transfer Money Popup'inda Sender Account, Receiver Account ,Amount ve Send Butonu Var mi Kontrol Et
@@ -19,12 +19,14 @@ tags:myaccountPage
 
 My Account  Transfer Money Amount Tutar Girmeden Send Butonu Aktif Olmaması
 ------------
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Trasnfer Money Butonuna Tıkla
 *Transfer Money Popup'inda Send Buton Aktif Degil mi Kontol Et
 
 My Account  Transfer Money Amount 0 Tutarı Girildiginde Basarili Islem Yapamaması
 ------------------
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *My Account Ekranında Amount Tutarı İlk Hesap Tutarı Olarak Hafızaya Kaydedilir.
 *Trasnfer Money Butonuna Tıkla
@@ -37,6 +39,7 @@ My Account  Transfer Money Amount 0 Tutarı Girildiginde Basarili Islem Yapamama
 
 My Account  Transfer Money Amount Girilien Tutar Bakiyeden Girilen Tutar Kadar Dusmeli
 ------------------
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *My Account Ekranında Amount Tutarı İlk Hesap Tutarı Olarak Hafızaya Kaydedilir.
 *Trasnfer Money Butonuna Tıkla
@@ -48,6 +51,7 @@ My Account  Transfer Money Amount Girilien Tutar Bakiyeden Girilen Tutar Kadar D
 
 My Account  Transfer Money Amount Girilen Tutar Transaction Kaydında Görülmelidir.
 ------------------
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Trasnfer Money Butonuna Tıkla
 *Transfer Amount Alanına "100" girilir.
@@ -58,6 +62,7 @@ My Account  Transfer Money Amount Girilen Tutar Transaction Kaydında Görülmel
 
 My Account  Transfer Money Amount Eksi Deger Kabul Edilmemeli.
 ------------------
+tags:transferMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Trasnfer Money Butonuna Tıkla
 *Transfer Money Popup'ında Receiver'da Testinium-3 Secilir.
@@ -69,19 +74,22 @@ My Account  Transfer Money Amount Eksi Deger Kabul Edilmemeli.
 
 Add Money Ekranında Card Number,Card Holder ,Expiry Date,CVV,Amount Inputlari ve Add Buton Gorulmelidir.
 -------------
+tags:addMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Add Money Butonuna Tıklanır.
 *Add Money Popup'ında Card Number,Card Holder,Expriy Date ,Cvv,Amount Inputlari ve Add Buton Gorulmedilir.
 
 Add Money Ekranında Card Number,Card Holder ,Expiry Date,CVV,Amount Inputlarin Zorunlu Olmasi
 ----------
+tags:addMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Add Money Butonuna Tıklanır.
 *Add Money Popup'ında Add Butonuna Tiklanir.
 *Add Money Popup'ında Card Number,Card Holder,Expriy Date ,Cvv,Amount Inputlarin Zorunlu Alan Oldugu Gorulmelidir.
 
-Add Money Ekranında Basarili Para Yukleme--bakılacak
+Add Money Ekranında Basarili Para Yukleme
 ----------
+tags:addMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *My Account Ekranında Amount Tutarı İlk Hesap Tutarı Olarak Hafızaya Kaydedilir.
 *Add Money Butonuna Tıklanır.
@@ -94,6 +102,7 @@ Add Money Ekranında Basarili Para Yukleme--bakılacak
 
 Add Money Ekranında Gecersiz Tarihte Uyari Vermesi
 ----------
+tags:addMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Add Money Butonuna Tıklanır.
 *Add Money Popup'ında Expriy Date Alanina "1300" Girilir.
@@ -102,6 +111,7 @@ Add Money Ekranında Gecersiz Tarihte Uyari Vermesi
 
 Add Money Ekranında Cvv alanı 3 karakterden fazla Kabul Etmemesi
 ----------
+tags:addMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Add Money Butonuna Tıklanır.
 *Add Money Popup'ında Cvv Date Alanina "1234" Girilir.
@@ -110,6 +120,7 @@ Add Money Ekranında Cvv alanı 3 karakterden fazla Kabul Etmemesi
 
 Add Money Ekranında Amount Alanı Text Kabul Etmemesi
 ----------
+tags:addMoney
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Add Money Butonuna Tıklanır.
 *Add Money Popup'ında Amount  Alanina "abcda" Girilir.
@@ -118,6 +129,7 @@ Add Money Ekranında Amount Alanı Text Kabul Etmemesi
 
 Edit Acoount Ekraninda Account Name Ve Update Butonu Gorulmelidir.
 ----------
+tags:editAccount
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Edit Account  Butonuna Tiklanir.
 *Edit Account Popup'ında Account Name İnputu ve Update Buton Gorulmedilir.
@@ -125,12 +137,14 @@ Edit Acoount Ekraninda Account Name Ve Update Butonu Gorulmelidir.
 
 Edit Acoount Ekraninda Account Name Inputunda Guncel Account Ismi Yazılı Olmalıdır.
 ----------
+tags:editAccount
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Edit Account  Butonuna Tiklanir.
 *Edit Account Popup'ında Account Name İnputunda Guncel Olan  "ykaraha1" Yazili mi Kontol Et.
 
 Edit Acoount Ekraninda Account Name Guncellemelidir.
 ----------
+tags:editAccount
 *Catchylabs Uygulamasına ykaraha1 Kullanıcı Adı ile Giris Yapılır.
 *Edit Account  Butonuna Tiklanir.
 *Edit Account Popup'ında Account Name İnputunda Guncel Olan  "ykaraha1" Yazili mi Kontol Et.
